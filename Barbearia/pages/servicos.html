@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços — Elite Barber</title>
+        <script>
+        window.tailwind = { corePlugins: { preflight: false } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css"> <!-- Estilo Principal -->
+    <link rel="stylesheet" href="../styles/servicos.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+</head>
+<body>
+
+    <!-- HEADER -->
+        <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-nome">Elite Barber</span>
+                <span class="logo-sub">Premium Grooming</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="agendamento.html" class="btn-agendar-nav">Agendar Agora</a>
+            <button class="btn-menu-sidebar" id="btn-menu-sidebar">☰ Menu</button>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span>Elite Barber</span>
+                <span>Premium Grooming</span>
+            </div>
+            <button class="sidebar-fechar" id="sidebar-fechar">✕</button>
+        </div>
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="sidebar-rodape">
+            <a href="agendamento.html">Agendar Agora →</a>
+        </div>
+    </aside>
+
+    <main>
+
+        <!-- HERO DA PÁGINA -->
+        <section class="page-hero">
+            <h1>Nossos <span>Serviços</span></h1>
+            <p>Descubra nossa gama completa de serviços premium, criados para elevar seu estilo e confiança.</p>
+        </section>
+
+        <!-- GRADE DE SERVIÇOS -->
+        <section class="servicos-section">
+            <div class="grid-servicos">
+
+                <div class="card-servico">
+                    <div class="card-servico-img" style="background-image: url('https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&q=80')"></div>
+                    <div class="card-servico-corpo">
+                        <h3>Corte Clássico</h3>
+                        <p>Corte tradicional com tesoura e máquina, acabamento impecável e lavagem incluída.</p>
+                        <div class="card-servico-rodape">
+                            <span class="preco">R$ 60,00</span>
+                            <span class="duracao">⏱️ 45 min</span>
+                        </div>
+                        <a href="agendamento.html" class="btn-agendar-card">Agendar Agora →</a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div class="card-servico-img" style="background-image: url('https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80')"></div>
+                    <div class="card-servico-corpo">
+                        <h3>Corte + Barba</h3>
+                        <p>Corte completo com design de barba, aparar e finalização com produtos premium.</p>
+                        <div class="card-servico-rodape">
+                            <span class="preco">R$ 90,00</span>
+                            <span class="duracao">⏱️ 1h 15min</span>
+                        </div>
+                        <a href="agendamento.html" class="btn-agendar-card">Agendar Agora →</a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div class="card-servico-img" style="background-image: url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80')"></div>
+                    <div class="card-servico-corpo">
+                        <h3>Barba Completa</h3>
+                        <p>Design, aparo e hidratação da barba com toalha quente e produtos de alta qualidade.</p>
+                        <div class="card-servico-rodape">
+                            <span class="preco">R$ 45,00</span>
+                            <span class="duracao">⏱️ 35 min</span>
+                        </div>
+                        <a href="agendamento.html" class="btn-agendar-card">Agendar Agora →</a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div class="card-servico-img" style="background-image: url('https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80')"></div>
+                    <div class="card-servico-corpo">
+                        <h3>Corte Premium</h3>
+                        <p>Corte personalizado com técnicas avançadas, lavagem com produtos exclusivos e finalização especial.</p>
+                        <div class="card-servico-rodape">
+                            <span class="preco">R$ 100,00</span>
+                            <span class="duracao">⏱️ 1h</span>
+                        </div>
+                        <a href="agendamento.html" class="btn-agendar-card">Agendar Agora →</a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div class="card-servico-img" style="background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80')"></div>
+                    <div class="card-servico-corpo">
+                        <h3>Tratamento Capilar</h3>
+                        <p>Hidratação profunda, massagem relaxante no couro cabeludo e produtos premium.</p>
+                        <div class="card-servico-rodape">
+                            <span class="preco">R$ 70,00</span>
+                            <span class="duracao">⏱️ 40 min</span>
+                        </div>
+                        <a href="agendamento.html" class="btn-agendar-card">Agendar Agora →</a>
+                    </div>
+                </div>
+
+                <div class="card-servico">
+                    <div class="card-servico-img" style="background-image: url('https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=600&q=80')"></div>
+                    <div class="card-servico-corpo">
+                        <h3>Pacote VIP 👑</h3>
+                        <p>Experiência completa: corte, barba, tratamento capilar, massagem e bebida premium inclusa.</p>
+                        <div class="card-servico-rodape">
+                            <span class="preco">R$ 180,00</span>
+                            <span class="duracao">⏱️ 2h</span>
+                        </div>
+                        <a href="agendamento.html" class="btn-agendar-card">Agendar Agora →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BANNER DE CONTATO -->
+            <div class="banner-contato" style="margin-top: 64px;">
+                <h3>Não Encontrou o Que Procura?</h3>
+                <p>Entre em contato e teremos prazer em criar um serviço personalizado para você.</p>
+                <a href="contato.html" class="btn-escuro">Entrar em Contato</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <strong>Elite Barber</strong>
+        <p>Rua Augusta, 1234 — São Paulo, SP &nbsp;|&nbsp; <a href="contato.html">Fale Conosco</a></p>
+        <p style="margin-top:8px;">&copy; 2025 Elite Barber. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/nav.js" defer></script>
+</body>
+</html>

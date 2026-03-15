@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Barber — Premium Grooming</title>
+        <script>
+        window.tailwind = { corePlugins: { preflight: false } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css"> <!-- Estilo Principal -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <style>
+        /* Apenas a imagem de fundo do hero, que não pode ir no index.css sem mudança de URL */
+        .hero {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.3)),
+                              url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1400&q=80');
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+        <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-nome">Elite Barber</span>
+                <span class="logo-sub">Premium Grooming</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="agendamento.html" class="btn-agendar-nav">Agendar Agora</a>
+            <button class="btn-menu-sidebar" id="btn-menu-sidebar">☰ Menu</button>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span>Elite Barber</span>
+                <span>Premium Grooming</span>
+            </div>
+            <button class="sidebar-fechar" id="sidebar-fechar">✕</button>
+        </div>
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="sidebar-rodape">
+            <a href="agendamento.html">Agendar Agora →</a>
+        </div>
+    </aside>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-conteudo">
+                <span class="hero-tag">✂️ Barbearia Premium</span>
+                <h1>Estilo e <em>Elegância</em><br>Incomparáveis</h1>
+                <p>Transforme seu visual com os melhores profissionais em cortes masculinos. Experiência premium do início ao fim.</p>
+                <div class="hero-botoes">
+                    <a href="agendamento.html" class="btn-primario">Agendar Horário</a>
+                    <a href="servicos.html" class="btn-secundario">Ver Serviços</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <section class="diferenciais">
+            <div class="secao-titulo">
+                <h2>Por Que Escolher a Elite Barber?</h2>
+                <p>Excelência em cada detalhe do seu atendimento.</p>
+            </div>
+            <div class="grid-diferenciais">
+                <div class="card-diferencial">
+                    <div class="icone">✂️</div>
+                    <h3>Cortes Premium</h3>
+                    <p>Técnicas modernas e estilos personalizados para cada cliente.</p>
+                </div>
+                <div class="card-diferencial">
+                    <div class="icone">📅</div>
+                    <h3>Agendamento Fácil</h3>
+                    <p>Sistema online para marcar seu horário com praticidade.</p>
+                </div>
+                <div class="card-diferencial">
+                    <div class="icone">🤵</div>
+                    <h3>Profissionais Experientes</h3>
+                    <p>Equipe altamente qualificada e atualizada nas tendências.</p>
+                </div>
+                <div class="card-diferencial">
+                    <div class="icone">👑</div>
+                    <h3>Atendimento VIP</h3>
+                    <p>Ambiente exclusivo e confortável para nossos clientes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section class="depoimentos">
+            <div class="secao-titulo">
+                <h2>O Que Dizem Nossos Clientes?</h2>
+                <p>Avaliações reais de quem confia em nós.</p>
+            </div>
+            <div class="grid-depoimentos">
+                <div class="card-depoimento">
+                    <p>"Melhor barbearia da região! Profissionalismo e qualidade que não encontro em nenhum outro lugar."</p>
+                    <div class="depoimento-autor">
+                        <div class="avatar">CS</div>
+                        <div>
+                            <strong>Carlos Silva</strong>
+                            <div class="estrelas">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <p>"Ambiente incrível, atendimento de alto nível e cortes sempre impecáveis. Virei cliente fiel!"</p>
+                    <div class="depoimento-autor">
+                        <div class="avatar">RS</div>
+                        <div>
+                            <strong>Roberto Santos</strong>
+                            <div class="estrelas">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-depoimento">
+                    <p>"Recomendo demais! Saio sempre satisfeito e com visual renovado. Equipe muito atenciosa."</p>
+                    <div class="depoimento-autor">
+                        <div class="avatar">FL</div>
+                        <div>
+                            <strong>Fernando Lima</strong>
+                            <div class="estrelas">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+            <h2>Pronto Para Renovar Seu Visual?</h2>
+            <p>Agende agora e garanta seu horário com os melhores da cidade.</p>
+            <a href="agendamento.html" class="btn-primario">Fazer Meu Agendamento</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <strong>Elite Barber</strong>
+        <p>Rua Augusta, 1234 — São Paulo, SP &nbsp;|&nbsp; <a href="contato.html">Fale Conosco</a></p>
+        <p style="margin-top:8px;">&copy; 2025 Elite Barber. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/nav.js" defer></script>
+</body>
+</html>

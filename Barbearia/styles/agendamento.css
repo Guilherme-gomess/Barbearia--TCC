@@ -1,0 +1,330 @@
+/* =============================================
+   agendamento.css — Wizard de Agendamento
+   ============================================= */
+
+.wizard-container {
+    max-width: 600px;
+    margin: 64px auto 96px;
+    padding: 0 24px;
+}
+
+.wizard-card {
+    background: var(--branco);
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    padding: 48px 44px;
+}
+
+/* ---- INDICADOR DE PASSOS ---- */
+.steps-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.step-circulo {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    color: var(--cinza-medio);
+    font-weight: 600;
+    font-size: 0.82rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.25s;
+    letter-spacing: 0;
+}
+
+.step-circulo.ativo {
+    background: var(--preto);
+    border-color: var(--preto);
+    color: var(--branco);
+}
+
+.step-circulo.concluido {
+    background: var(--amarelo);
+    border-color: var(--amarelo);
+    color: var(--preto);
+}
+
+.step-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--cinza-medio);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.step-label.ativo { color: var(--preto); }
+
+.step-linha {
+    flex: 1;
+    height: 1px;
+    background: var(--cinza-borda);
+    margin-bottom: 26px;
+    transition: background 0.3s;
+}
+
+.step-linha.ativa { background: var(--preto); }
+
+/* ---- PASSOS ---- */
+.passo { display: none; }
+.passo.ativo { display: block; }
+
+.passo h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--preto);
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+/* ---- CAMPOS ---- */
+.campo { margin-bottom: 20px; }
+
+.campo label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--cinza-medio);
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--raio);
+    padding: 11px 14px;
+    font-family: var(--fonte-corpo);
+    font-size: 0.92rem;
+    font-weight: 400;
+    color: var(--preto);
+    background: var(--branco);
+    transition: border-color var(--transicao);
+    outline: none;
+    appearance: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--preto);
+}
+
+.campo .erro {
+    display: none;
+    color: #c0392b;
+    font-size: 0.76rem;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.campo.invalido input,
+.campo.invalido select { border-color: #c0392b; }
+.campo.invalido .erro   { display: block; }
+
+/* ---- HORÁRIOS ---- */
+.titulo-horarios {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--cinza-medio);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 24px 0 12px;
+}
+
+.grid-horarios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.time-slot {
+    padding: 9px 4px;
+    background: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--raio);
+    font-family: var(--fonte-corpo);
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--cinza-medio);
+    cursor: pointer;
+    text-align: center;
+    transition: all var(--transicao);
+}
+
+.time-slot:hover {
+    border-color: var(--preto);
+    color: var(--preto);
+    background: var(--branco);
+}
+
+.time-slot.selecionado {
+    background: var(--preto);
+    border-color: var(--preto);
+    color: var(--branco);
+}
+
+.erro-horario {
+    display: none;
+    color: #c0392b;
+    font-size: 0.76rem;
+    margin-bottom: 10px;
+}
+
+.erro-horario.visivel { display: block; }
+
+/* ---- NAVEGAÇÃO ---- */
+.nav-passos {
+    display: flex;
+    gap: 10px;
+    margin-top: 32px;
+}
+
+.btn-voltar {
+    flex: 1;
+    background: var(--cinza-fundo);
+    color: var(--cinza-medio);
+    font-family: var(--fonte-corpo);
+    font-weight: 500;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px;
+    border-radius: var(--raio);
+    border: 1px solid var(--cinza-borda);
+    cursor: pointer;
+    transition: all var(--transicao);
+}
+
+.btn-voltar:hover { color: var(--preto); border-color: var(--preto); }
+
+.btn-proximo {
+    flex: 2;
+    background: var(--amarelo);
+    color: var(--preto);
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px;
+    border-radius: var(--raio);
+    border: none;
+    cursor: pointer;
+    transition: opacity var(--transicao);
+}
+
+.btn-proximo:hover { opacity: 0.85; }
+
+.btn-confirmar {
+    flex: 2;
+    background: var(--preto);
+    color: var(--branco);
+    font-family: var(--fonte-corpo);
+    font-weight: 500;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 13px;
+    border-radius: var(--raio);
+    border: none;
+    cursor: pointer;
+    transition: opacity var(--transicao);
+}
+
+.btn-confirmar:hover { opacity: 0.75; }
+
+/* ---- REVISÃO ---- */
+.revisao-box {
+    background: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--raio);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.revisao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 18px;
+    font-size: 0.88rem;
+    border-bottom: 1px solid var(--cinza-borda);
+}
+
+.revisao-item:last-child { border-bottom: none; }
+
+.revisao-item span:first-child {
+    color: var(--cinza-medio);
+    font-weight: 400;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.revisao-item span:last-child {
+    color: var(--preto);
+    font-weight: 600;
+}
+
+/* ---- CONFIRMAÇÃO ---- */
+.confirmado { display: none; text-align: center; padding: 40px 0; }
+.confirmado.ativo { display: block; }
+
+.confirmado .check {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.confirmado h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    color: var(--preto);
+    margin-bottom: 12px;
+    border: none;
+    padding: 0;
+    font-weight: 700;
+}
+
+.confirmado p {
+    color: var(--cinza-medio);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.confirmado .detalhe-confirmado {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--preto);
+    margin: 20px 0 36px;
+    padding: 14px 20px;
+    background: var(--cinza-fundo);
+    border: 1px solid var(--cinza-borda);
+    border-radius: var(--raio);
+    display: inline-block;
+}
+
+/* ---- RESPONSIVO ---- */
+@media (max-width: 600px) {
+    .wizard-card { padding: 32px 20px; }
+    .grid-horarios { grid-template-columns: repeat(3, 1fr); }
+    .step-label { display: none; }
+}

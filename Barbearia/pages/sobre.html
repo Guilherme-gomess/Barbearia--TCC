@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre — Elite Barber</title>
+        <script>
+        window.tailwind = { corePlugins: { preflight: false } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css"> <!-- Estilo Principal -->
+    <link rel="stylesheet" href="../styles/sobre.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+</head>
+<body>
+
+    <!-- HEADER -->
+        <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-nome">Elite Barber</span>
+                <span class="logo-sub">Premium Grooming</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="agendamento.html" class="btn-agendar-nav">Agendar Agora</a>
+            <button class="btn-menu-sidebar" id="btn-menu-sidebar">☰ Menu</button>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span>Elite Barber</span>
+                <span>Premium Grooming</span>
+            </div>
+            <button class="sidebar-fechar" id="sidebar-fechar">✕</button>
+        </div>
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="sidebar-rodape">
+            <a href="agendamento.html">Agendar Agora →</a>
+        </div>
+    </aside>
+
+    <main>
+
+        <section class="page-hero">
+            <h1>Sobre a <span>Elite Barber</span></h1>
+            <p>Conheça nossa história, nossa equipe e os valores que guiam cada atendimento.</p>
+        </section>
+
+        <div class="sobre-container">
+
+            <!-- HISTÓRIA -->
+            <div class="historia">
+                <div class="historia-texto">
+                    <h2>Tradição e <span>Modernidade</span> em Cada Corte</h2>
+                    <p>Fundada em 2020, a Elite Barber nasceu do sonho de criar um espaço onde tradição e modernidade se encontram para oferecer a melhor experiência em cuidados masculinos.</p>
+                    <p>Nossa missão é proporcionar não apenas um corte de cabelo, mas uma transformação completa que eleva a confiança e o estilo de cada cliente. Combinamos técnicas clássicas com as tendências mais atuais do mercado.</p>
+                    <p>Com uma equipe de profissionais apaixonados e altamente qualificados, criamos um ambiente acolhedor onde cada detalhe é pensado para oferecer uma experiência premium e memorável.</p>
+                    <a href="agendamento.html" class="btn-primario" style="margin-top:8px;">Agendar Agora</a>
+                </div>
+                <div class="historia-imagem">
+                    <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=700&q=80" alt="Interior da Elite Barber">
+                    <div class="badge">
+                        <strong>5+</strong>
+                        <span>Anos de Experiência</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VALORES -->
+            <div class="valores">
+                <h2>Nossos Valores</h2>
+                <div class="grid-valores">
+                    <div class="card-valor">
+                        <div class="icone">✨</div>
+                        <h3>Excelência</h3>
+                        <p>Compromisso com a qualidade em cada detalhe do atendimento.</p>
+                    </div>
+                    <div class="card-valor">
+                        <div class="icone">✂️</div>
+                        <h3>Profissionalismo</h3>
+                        <p>Equipe altamente qualificada e em constante atualização.</p>
+                    </div>
+                    <div class="card-valor">
+                        <div class="icone">💡</div>
+                        <h3>Inovação</h3>
+                        <p>Sempre atentos às últimas tendências e técnicas do mercado.</p>
+                    </div>
+                    <div class="card-valor">
+                        <div class="icone">❤️</div>
+                        <h3>Cuidado</h3>
+                        <p>Dedicação e atenção personalizada para cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EQUIPE -->
+            <div class="equipe">
+                <h2>Nossa Equipe</h2>
+                <div class="grid-equipe">
+                    <div class="card-membro">
+                        <div class="membro-foto">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Ricardo Alves">
+                        </div>
+                        <div class="membro-info">
+                            <h4>Ricardo Alves</h4>
+                            <p class="cargo">Master Barber</p>
+                            <p>Especialista em cortes modernos com mais de 10 anos de experiência em barbearias premium.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro">
+                        <div class="membro-foto">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Bruno Santos">
+                        </div>
+                        <div class="membro-info">
+                            <h4>Bruno Santos</h4>
+                            <p class="cargo">Barber Specialist</p>
+                            <p>Especialista em design de barbas e acabamentos perfeitos. Referência em tratamentos capilares.</p>
+                        </div>
+                    </div>
+                    <div class="card-membro">
+                        <div class="membro-foto">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80" alt="Felipe Costa">
+                        </div>
+                        <div class="membro-info">
+                            <h4>Felipe Costa</h4>
+                            <p class="cargo">Style Consultant</p>
+                            <p>Expert em tendências e estilos contemporâneos. Ajuda cada cliente a encontrar seu visual ideal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <strong>Elite Barber</strong>
+        <p>Rua Augusta, 1234 — São Paulo, SP &nbsp;|&nbsp; <a href="contato.html">Fale Conosco</a></p>
+        <p style="margin-top:8px;">&copy; 2025 Elite Barber. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/nav.js" defer></script>
+</body>
+</html>

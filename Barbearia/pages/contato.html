@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Elite Barber</title>
+        <script>
+        window.tailwind = { corePlugins: { preflight: false } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/style.css"> <!-- Estilo Principal -->
+    <link rel="stylesheet" href="../styles/contato.css">
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+</head>
+<body>
+
+    <!-- HEADER -->
+        <header>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-nome">Elite Barber</span>
+                <span class="logo-sub">Premium Grooming</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="agendamento.html" class="btn-agendar-nav">Agendar Agora</a>
+            <button class="btn-menu-sidebar" id="btn-menu-sidebar">☰ Menu</button>
+        </div>
+    </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span>Elite Barber</span>
+                <span>Premium Grooming</span>
+            </div>
+            <button class="sidebar-fechar" id="sidebar-fechar">✕</button>
+        </div>
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="sidebar-rodape">
+            <a href="agendamento.html">Agendar Agora →</a>
+        </div>
+    </aside>
+
+    <main>
+
+        <section class="page-hero">
+            <h1>Entre em <span>Contato</span></h1>
+            <p>Estamos prontos para atender você. Tire suas dúvidas ou agende sua visita.</p>
+        </section>
+
+        <div class="contato-container">
+
+            <!-- FORMULÁRIO -->
+            <div>
+                <h2 class="formulario-titulo">Envie uma Mensagem</h2>
+                <div class="campo">
+                    <label for="c-nome">👤 Nome Completo</label>
+                    <input type="text" id="c-nome" placeholder="Ex: João Silva">
+                </div>
+                <div class="grid-2">
+                    <div class="campo">
+                        <label for="c-email">📧 E-mail</label>
+                        <input type="email" id="c-email" placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="campo">
+                        <label for="c-telefone">📞 Telefone</label>
+                        <input type="tel" id="c-telefone" placeholder="(11) 98765-4321">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label for="c-mensagem">💬 Mensagem</label>
+                    <textarea id="c-mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+                <button class="btn-enviar" onclick="enviarMensagem()">Enviar Mensagem →</button>
+                <div class="mensagem-sucesso" id="msg-sucesso">
+                    ✅ Mensagem enviada com sucesso! Em breve entraremos em contato.
+                </div>
+            </div>
+
+            <!-- INFO -->
+            <div>
+                <h2 class="info-titulo">Nossas Informações</h2>
+
+                <a href="https://wa.me/5511999999999" class="whatsapp-cta" target="_blank">
+                    <span>💬</span>
+                    Chamar no WhatsApp
+                </a>
+
+                <div class="cards-info">
+                    <div class="card-info">
+                        <div class="icone">📍</div>
+                        <h4>Endereço</h4>
+                        <p>Rua Augusta, 1234<br>Consolação, SP<br>CEP 01305-100</p>
+                    </div>
+                    <div class="card-info">
+                        <div class="icone">☎️</div>
+                        <h4>Telefone</h4>
+                        <p>(11) 98765-4321<br>(11) 3456-7890</p>
+                    </div>
+                    <div class="card-info">
+                        <div class="icone">📧</div>
+                        <h4>E-mail</h4>
+                        <p><a href="/cdn-cgi/l/email-protection#fd9e9293899c8992bd98919489989f9c8f9f988fd39e9290d39f8f"><span class="__cf_email__" data-cfemail="f89b97968c998c97b89d94918c9d9a998a9a9d8ad69b9795d69a8a">[email&#160;protected]</span></a></p>
+                    </div>
+                    <div class="card-info">
+                        <div class="icone">⏰</div>
+                        <h4>Horários</h4>
+                        <p>Seg–Sex: 9h às 19h<br>Sábado: 9h às 17h<br>Dom: Fechado</p>
+                    </div>
+                </div>
+
+                <div class="mapa-placeholder">
+                    📍 Insira aqui o embed do Google Maps
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <strong>Elite Barber</strong>
+        <p>Rua Augusta, 1234 — São Paulo, SP &nbsp;|&nbsp; <a href="contato.html">Fale Conosco</a></p>
+        <p style="margin-top:8px;">&copy; 2025 Elite Barber. Todos os direitos reservados.</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../nav.js" defer></script>
+    <script>
+        function enviarMensagem() {
+            const nome = document.getElementById('c-nome').value.trim();
+            const email = document.getElementById('c-email').value.trim();
+            const mensagem = document.getElementById('c-mensagem').value.trim();
+
+            if (!nome || !email || !mensagem) {
+                alert('Por favor, preencha nome, e-mail e mensagem.');
+                return;
+            }
+
+            // Aqui você conecta ao seu serviço de envio (ex: Formspree, EmailJS)
+            document.getElementById('msg-sucesso').classList.add('visivel');
+            document.get}

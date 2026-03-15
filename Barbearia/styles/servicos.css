@@ -1,0 +1,138 @@
+/* =============================================
+   servicos.css — Serviços
+   ============================================= */
+
+.servicos-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 32px;
+}
+
+/* ---- GRADE DE SERVIÇOS ---- */
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1px;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.card-servico {
+    background: var(--branco);
+    display: flex;
+    flex-direction: column;
+    transition: background var(--transicao);
+}
+
+.card-servico:hover { background: var(--cinza-fundo); }
+
+.card-servico-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-servico-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.15));
+}
+
+.card-servico-corpo {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid var(--cinza-borda);
+}
+
+.card-servico-corpo h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
+
+.card-servico-corpo p {
+    font-size: 0.85rem;
+    color: var(--cinza-medio);
+    line-height: 1.75;
+    font-weight: 300;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.card-servico-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--cinza-borda);
+    margin-bottom: 16px;
+}
+
+.preco {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.duracao {
+    font-size: 0.78rem;
+    color: var(--cinza-medio);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.btn-agendar-card {
+    display: block;
+    text-align: center;
+    background: var(--preto);
+    color: var(--branco);
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 11px;
+    border-radius: var(--raio);
+    text-decoration: none;
+    transition: opacity var(--transicao);
+}
+
+.btn-agendar-card:hover { opacity: 0.75; }
+
+/* ---- BANNER DE CONTATO ---- */
+.banner-contato {
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    padding: 56px 40px;
+    text-align: center;
+}
+
+.banner-contato h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--preto);
+    margin-bottom: 12px;
+}
+
+.banner-contato p {
+    color: var(--cinza-medio);
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+/* ---- RESPONSIVO ---- */
+@media (max-width: 768px) {
+    .servicos-section { padding: 56px 20px; }
+    .grid-servicos { grid-template-columns: 1fr; }
+    .banner-contato { padding: 40px 24px; }
+}
