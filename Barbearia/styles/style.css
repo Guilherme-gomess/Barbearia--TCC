@@ -7,14 +7,14 @@
 
 /* ---- VARIÁVEIS ---- */
 :root {
-    --amarelo:        #E8A800;
-    --amarelo-claro:  #FFC000;
+    --amarelo:        #ac0707;
+    --amarelo-claro:  #9b0000;
     --preto:          #0e0e0e;
     --cinza-escuro:   #1c1c1c;
-    --cinza-medio:    #6b6b6b;
-    --cinza-borda:    #e8e8e8;
-    --cinza-fundo:    #f9f9f9;
-    --branco:         #ffffff;
+    --cinza-medio:    #413f3f;
+    --cinza-borda:    #e9e4e4;
+    --cinza-fundo:    #ffffff;
+    --branco:         #eeecec;
     --fonte-titulo:   'Cormorant Garamond', serif;
     --fonte-corpo:    'Outfit', sans-serif;
     --raio:           6px;
